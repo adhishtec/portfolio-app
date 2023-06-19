@@ -1,0 +1,109 @@
+{
+    "name": "Adhish Nigam",
+    "description": "A React developer is responsible for the design and implementation of user interfaces (UIs) and UI components using React, a front-end JavaScript library. They develop and maintain UIs for web and mobile apps. They must have high-level expertise using React and a deep understanding of all stages of the software development life cycle. They write, test, debug, and implement code to meet user requirements. React developers need to have good communication skills as they work closely with project managers, developers, clients, testers, and web designers to create effective applications. They should have significant experience using JavaScript or Typescript, strong math skills, and a good working knowledge of debugging tools. A thorough understanding of React and its core principles is required for a React developer. They should also have a deep familiarity with front-end build pipelines and development tools, such as Babel and Webpack. React developers need the ability to understand business requirements and translate them into technical requirements. Exceptional time management skills and solid interpersonal skills are also essential for professionals in this role.",
+    "address": "Kelsterbach, Germany",
+    "phone": "+49-15510132051",
+    "email": "adhishnigam@gmail.com",
+    "role": [
+      {
+        "user": [
+          {
+            "id": 2432443,
+            "username": "Adhish",
+            "role": "Admin",
+            "password": "adhish123",
+            "description": "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+          },
+          {
+            "id": 2432444,
+            "username": "Sonam",
+            "role": "Admin",
+            "password": "sonam@123"
+          },
+          {
+            "id": 2432445,
+            "username": "Vijay",
+            "role": "Admin",
+            "password": "vijay@123"
+          }
+        ]
+      }
+    ],
+    "career":[{
+      "education":[
+          {
+              "startYear":"2008",
+              "completeYear":"2011",
+              "digreeName": "Bachelor Of Computer Application",
+              "college": "JNU",
+              "type":"full time"
+          },
+          {
+              "startYear":"2008",
+              "completeYear":"2011",
+              "digreeName": "Masters Of Computer Application",
+              "college": "JNU",
+              "type":"full time"
+          }
+  
+        ],
+      "professionalCareer":[
+        {
+             "startYear":"June 2011",
+             "endYear":"June 2014",
+             "name":"Electron Bridge",
+             "logo":"",
+             "description":"...",
+             "responsiblities":"Mobile application(Android) Developer, implement SIP on diler",
+             "technelogy":"..."
+        },
+        {
+            "startYear":"Aug 2014",
+            "endYear":"June 2022",
+            "name":"Tata Consultancy Services",
+            "logo":"",
+            "description":"...",
+            "responsiblities":"Mobile application(Android) Developer, Banking,healthcare,telecom,finince domain",
+            "technelogy":"..."
+        },[
+            {
+                "startYear":"Aug 2014",
+                "endYear":"Nov 2015",
+                "name":"Lloyds Bank Group",
+                "logo":"",
+                "description":"...",
+                "responsiblities":"Mobile application(Android) Developer, Banking app,",
+                "technelogy":"Android, java, Mobile apps"   
+            },
+            {
+                "startYear":"Nov 2015",
+                "endYear":"May 2016",
+                "name":"GE Health Care",
+                "logo":"",
+                "description":"...",
+                "responsiblities":"Mobile application(Android) Developer, Health care app,",
+                "technelogy":"Android, java, Mobile apps"   
+            },
+            {
+                "startYear":"July 2016",
+                "endYear":"Nov 2018",
+                "name":"Celcome Malaysia",
+                "logo":"",
+                "description":"...",
+                "responsiblities":"Mobile hybrid application(Android,iOS) and web Development, Telecome,",
+                "technelogy":"Android, java, Mobile apps"   
+            },
+            {
+                "startYear":"Nov 2018",
+                "endYear":"June 2022",
+                "name":"Generali",
+                "logo":"",
+                "description":"...",
+                "responsiblities":"Mobile application(Android) Developer, Health care app,",
+                "technelogy":"Android, java, Mobile apps"   
+            }
+        ]
+
+        ] 
+    }]
+  }

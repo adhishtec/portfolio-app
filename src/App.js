@@ -1,25 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './ui/login';
+import ResponsiveAppBar from './ui/header/header'
+import {createContext} from 'react';
+import Myhomeprofile from '../src/ui/profile/Myhomeprofile'
+import { BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import Career from '../src/ui/career/career';
+import MyProject from './ui/myproject/myproject';
+import Hobbies from './ui/Hobbies/hobbies';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(){
+let globalDataInfo = createContext()
+  return(
+    <> 
+    <ResponsiveAppBar/> 
+      <Routes>
+          <Route path="/" element={<Myhomeprofile />} />
+          <Route path="/career" element={<Career/>} />
+          <Route path="/myproject" element={<MyProject />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+       </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App

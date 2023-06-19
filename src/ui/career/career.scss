@@ -1,0 +1,62 @@
+.imageicon{
+    border-radius: 50%;
+}
+
+.main-content-area{
+    height: 200px ;
+    width: 500px;
+    background-color: aqua;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    
+  }
+
+  .modal-text{
+   
+    flex-direction: column;
+  
+  }
+  
+  .material-symbols-outlined {
+    font-weight: bold;
+    cursor: pointer;
+    color: #980404;
+    margin-bottom: 140px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+  }
+  .modal-image{
+    height: 30%;
+    width: 30%;
+   
+  }
+  .popup-imgae{
+    height: 100%;
+    width: 100%;
+  }
+
+ 

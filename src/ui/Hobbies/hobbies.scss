@@ -1,0 +1,31 @@
+
+.bapu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.bacha{
+  background-color: brown;
+  color: aliceblue;
+  height: 120px;
+  width: 120px;
+}
+
+.chotu{
+    border: 10px,dotted,red;
+    height: 60px;
+    width: 120px;
+    background-color: aqua;
+    padding: 20px 10px;
+    
+    
+}
+.countries-list{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
