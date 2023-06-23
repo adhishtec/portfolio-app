@@ -47,7 +47,6 @@ function ScrollTop(props) {
         role="presentation"
         sx={{ position: 'fixed', bottom: 16, right: 16 }}
       >
-        
         {children}
       </Box>
     </Fade>
@@ -106,17 +105,16 @@ export default function BackToTop(props) {
     <React.Fragment>
       <CssBaseline />
       <Toolbar id="back-to-top-anchor" />
-      <Container className='main-container'>
-      <Box className="video-box">
-        <video width="auto" height="300" autoPlay muted >
+      <div className='start-container'>
+  
+        <img src={img} className='profileimg'/>
+        <Box className="video-box">
+        <video width="auto" height="270" autoPlay muted >
         <source src= {vdo} type="video/ogg"/>
       </video>
-        </Box>
-        <Box className="profile-box">
-        <img src={img} className='profileimg'/>
-
-        </Box>
-       
+      </Box>
+        </div>
+        <Container className='last-container'>
         <Box className='nametitle'>
           <p>
             <a>
@@ -140,8 +138,6 @@ export default function BackToTop(props) {
         Resume</Button>
         </Box>
       </Container>
-      
-    
     </React.Fragment>
   );
 }

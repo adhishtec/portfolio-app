@@ -15,19 +15,24 @@
 
 .profileimg {
     border-radius: 50%;
-    width: 200px;
+    width: 14%;
+    height: 10%;
+    margin-top: 5%;
+    margin-left: 2%;
    
   }
-  .card-constenet{
-    display: flex;
-  }
-  .card{
-    width: 40%;
-    height: 50%;
-    scroll-behavior: smooth;
-  }
-.nametitle{
-  font-size: 50px;
 
+.nametitle{
+  font-size: 30px;
+
+}
+
+.start-container{
+  display: flex;
+  
+}
+
+.video-box{
+  width: inherit
 }
  

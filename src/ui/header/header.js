@@ -16,7 +16,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 
-const pages = ['Info','career','My projects', 'Blog'];
+const pages = ['Info','career', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -62,7 +62,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1}} />
           <Typography
             variant="h6"
             noWrap
@@ -78,7 +78,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            ADHISHNIGAM
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -144,7 +144,6 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-
                 {page}
               </Button>
             ))}

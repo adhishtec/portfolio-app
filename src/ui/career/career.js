@@ -60,8 +60,7 @@ export default function Career() {
  
   return (
     <>
-    {CareerData.digreeAndEducation?.map((data)=>{
-      console.log('jjjjjjjjjjjjjj.....',data)
+    { CareerData.digreeAndEducation?.map((data)=>{
       return(
       <Timeline position="alternate">
       <Detail isOpen={isModalOpen} onClose={closeModal} obj={dataObj}/>
@@ -87,12 +86,15 @@ export default function Career() {
           {''}
           </Typography>
           <Typography>{data.fullName}</Typography>
+          <Typography>{data.responsiblities}</Typography>
+          
         </TimelineContent>
       </TimelineItem>     
     </Timeline>
       )
-    })}
+    })} 
     
   </>
   );
 }
+
