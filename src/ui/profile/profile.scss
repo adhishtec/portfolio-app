@@ -1,38 +1,33 @@
-.loginform{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    height: 20%;
-    margin:0,auto;
-    row-gap: 10px;
-   
-}
-
-.outlined-required{
-    margin-top: 10%;
-    
+.outlined-required {
+  margin-top: 10%;
 }
 
 .profileimg {
-    border-radius: 50%;
-    width: 14%;
-    height: 10%;
-    margin-top: 5%;
-    margin-left: 2%;
-   
-  }
+  border-radius: 50%;
+  width: 14%;
+  height: 10%;
+  margin-top: 5%;
+  margin-left: 2%;
+}
 
-.nametitle{
+.nametitle {
   font-size: 30px;
-
+  color: #eb8006;
 }
 
-.start-container{
+.start-container {
   display: flex;
-  
+  margin-left: 8%;
 }
 
-.video-box{
-  width: inherit
+.video-box {
+  width: inherit;
 }
- 
+.main-component {
+  background-color: #1d1554;
+  color: aliceblue;
+}
+
+.description-content {
+  margin-top: 20px;
+}

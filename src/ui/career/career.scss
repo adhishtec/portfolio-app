@@ -1,91 +1,116 @@
-.imageicon{
-    border-radius: 50%;
+.imageicon {
+  border-radius: 50%;
 }
 
-.main-content-area{
-    height: 200px ;
-    width: 500px;
-    background-color: aqua;
+.main-content-area {
+  height: 200px;
+  width: 500px;
+  background-color: aqua;
 }
 
 .modal {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.121);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    background-color: white;
-    display: flex;    max-width: 50%;
-    text-align: center;
-    display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.121);
+  display: flex;
   justify-content: center;
-  }
+  align-items: center;
+}
 
-  .modal-text{
-   
-    flex-direction: column;
-    margin-left: 2%;
-  
-  }
-  
-  .material-symbols-outlined {
-    font-weight: bold;
-    cursor: pointer;
-    color: #fa3803;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-  }
-  .modal-image{
-    width: 40%;
-  }
-  .popup-imgae{
-    height: 100%;
-    width: 100%;
-    border: 2px solid rgb(78, 77, 76);
-  }
-
- .material-symbols-outlined{
-  
- }
- .modal-body .col-sm-8 {
+.modal-content {
+  background-color: white;
+  display: flex;
+  max-width: 50%;
   text-align: center;
-}
-.intro-title {
-margin-bottom: 5px;
-font-weight: 400;
-color: #333;
-}
-
-@media (max-width: 575px) {
-.modal-body .col-sm-4 {
-  text-align: center;
-  margin-top: 25px;
-}
-}
-@media (min-width: 576px) {
-.modal-dialog {
-    max-width: 80%;
-}
-.main-body{
   display: flex;
   justify-content: center;
 }
-.image{
-  width: 50%;
-  height: 50%;
+
+.modal-text {
+  flex-direction: column;
+  margin-left: 2%;
 }
-.close{
-  height: 10%;
-  
+
+.material-symbols-outlined {
+  font-weight: bold;
+  cursor: pointer;
+  color: #fa3803;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0;
 }
+.modal-image {
+  width: 40%;
+}
+.popup-imgae {
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgb(78, 77, 76);
+}
+
+.material-symbols-outlined {
+}
+.modal-body .col-sm-8 {
+  text-align: center;
+}
+.intro-title {
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: #333;
+}
+
+@media (max-width: 575px) {
+  .modal-body .col-sm-4 {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 80%;
+  }
+  .main-body {
+    display: flex;
+    justify-content: center;
+  }
+  .image {
+    width: 50%;
+    height: 50%;
+  }
+  .close {
+    height: 10%;
+  }
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #1d1554;
+    border: none;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    color: rgb(236, 87, 12);
+  }
+  a {
+    text-decoration: none;
+    all: unset;
+  }
+  a:visited {
+    color: #ffffff;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: #eb6c04;
+}
+.timeline {
+  color: #eb6c04;
 }

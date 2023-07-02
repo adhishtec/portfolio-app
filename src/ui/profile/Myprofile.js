@@ -1,22 +1,22 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import CssBaseline from '@mui/material/CssBaseline';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Fab from '@mui/material/Fab';
-import Button from '@mui/material/Button'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Fade from '@mui/material/Fade';
-import img from '../../assets/adhish.png'
-import {getUserData} from '../../data/dataProvider'
-import LinearProgress from '@mui/material/LinearProgress';
-import resume from '../../assets/adhish_nigam.pdf'
-import FormGroup from '@mui/material/FormGroup';
-import vdo from '../../assets/images/myvideo.mp4'
+import * as React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import CssBaseline from "@mui/material/CssBaseline";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Fab from "@mui/material/Fab";
+import Button from "@mui/material/Button";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Fade from "@mui/material/Fade";
+import img from "../../assets/adhish.png";
+import { getUserData } from "../../data/dataProvider";
+import LinearProgress from "@mui/material/LinearProgress";
+import resume from "../../assets/adhish_nigam.pdf";
+import FormGroup from "@mui/material/FormGroup";
+import vdo from "../../assets/images/myvideo.mp4";
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -29,23 +29,22 @@ function ScrollTop(props) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      '#back-to-top-anchor',
+      "#back-to-top-anchor"
     );
 
     if (anchor) {
       anchor.scrollIntoView({
-        block: 'center',
+        block: "center",
       });
     }
   };
 
   return (
     <Fade in={trigger}>
-
       <Box
         onClick={handleClick}
         role="presentation"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
       >
         {children}
       </Box>
@@ -62,17 +61,15 @@ ScrollTop.propTypes = {
   window: PropTypes.func,
 };
 
- 
-
 export default function BackToTop(props) {
-  const [getDescription,setDescription]=React.useState()
-  const [getObject,setObject]=React.useState({})
-  React.useEffect(()=>{
-  setDescription(getUserData().description)
-  setObject(getUserData())
+  const [getDescription, setDescription] = React.useState();
+  const [getObject, setObject] = React.useState({});
+  React.useEffect(() => {
+    setDescription(getUserData().description);
+    setObject(getUserData());
 
-  console.log(getObject)
-  },[])
+    console.log(getObject);
+  }, []);
 
   const [progress, setProgress] = React.useState(0);
   const [buffer, setBuffer] = React.useState(10);
@@ -100,43 +97,28 @@ export default function BackToTop(props) {
     };
   }, []);
 
-
   return (
     <React.Fragment>
       <CssBaseline />
       <Toolbar id="back-to-top-anchor" />
-      <div className='start-container'>
-  
-        <img src={img} className='profileimg'/>
+      <div className="start-container">
+        <img src={img} className="profileimg" />
         <Box className="video-box">
-        <video width="auto" height="270" autoPlay muted >
-        <source src= {vdo} type="video/ogg"/>
-      </video>
-      </Box>
-        </div>
-        <Container className='last-container'>
-        <Box className='nametitle'>
+          <video width="auto" height="270" autoPlay muted>
+            <source src={vdo} type="video/ogg" />
+          </video>
+        </Box>
+      </div>
+      <Container className="last-container">
+        <Box className="nametitle">
           <p>
-            <a>
-          {getObject.name}
-          </a>
+            <a>{getObject.name}</a>
           </p>
         </Box>
-        <Box>
-          {getObject.phone}
-        </Box>
-        <Box>
-          {getObject.address}
-        </Box>
-        <Box sx={{ my: 2 }}>
-          {getDescription}
-        </Box>
+        <Box>{getObject.phone}</Box>
+        <Box>{getObject.address}</Box>
 
-        <Box sx={{ my: 2 }}>
-  
-        <Button variant="contained">
-        Resume</Button>
-        </Box>
+        <Box className="description-content">{getDescription}</Box>
       </Container>
     </React.Fragment>
   );
