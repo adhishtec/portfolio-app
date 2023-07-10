@@ -25,9 +25,7 @@ export default function Career() {
     setCareerData(data);
   }, [getCareer()]);
 
-  React.useEffect(() => {
-    console.log("...>", CareerData.digreeAndEducation);
-  }, [CareerData]);
+  React.useEffect(() => {}, [CareerData]);
 
   function downloadFunc() {
     var anchor = document.createElement("a");
@@ -43,8 +41,8 @@ export default function Career() {
   }
 
   const openModal = (data) => {
-    setIsModalOpen(true);
-    setDataObj(data);
+    // setIsModalOpen(true);
+    // setDataObj(data);
   };
 
   const closeModal = () => {
@@ -91,13 +89,6 @@ export default function Career() {
             </Timeline>
           );
         })}
-
-        <Button className="resume-button">
-          <a href={resume} download="AdhishNigam.pdf">
-            {""}
-            Download Resume{" "}
-          </a>
-        </Button>
       </div>
     </>
   );

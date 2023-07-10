@@ -23,9 +23,7 @@ const bull = (
   <Box
     component="span"
     sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
+  ></Box>
 );
 
 const card = (
@@ -87,7 +85,7 @@ export default function Hobbies() {
   }, [getHobbies()]);
 
   function detail(place) {
-    localStorage.setItem("myAppData", JSON.stringify(place.description));
+    localStorage.setItem("myAppData", JSON.stringify(place));
     setJsonData(place);
     navigate("/hobbyDetails", "place");
     setDetail(true);

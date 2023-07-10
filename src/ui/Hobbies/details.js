@@ -13,53 +13,26 @@ import "./hobbies.scss";
 
 const Details = () => {
   const { place } = useParams();
-  const [localData, setLocalData] = useState([]);
+  const [localData, setLocalData] = useState({});
+  const [imgSrc, setImgSrc] = useState([]);
 
   const { jsonData } = useContext(DataContext);
-  const photos = [
-    {
-      src: india1,
-      width: 5,
-      height: 3,
-    },
-    {
-      src: india2,
-      width: 1,
-      height: 1,
-    },
-    {
-      src: india3,
-      width: 6,
-      height: 3,
-    },
-    {
-      src: india4,
-      width: 2,
-      height: 1,
-    },
-    {
-      src: india5,
-      width: 5,
-      height: 3,
-    },
-    {
-      src: india6,
-      width: 1,
-      height: 1,
-    },
-    {
-      src: india7,
-      width: 4,
-      height: 3,
-    },
-  ];
 
-  // useEffect(() => {
-  //   // Update local storage when jsonData changes
-  //   localStorage.setItem("myAppData", JSON.stringify(jsonData));
-  //   console.log("......>", data);
-  //   setData(jsonData);
-  // }, [jsonData]);
+  const random = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
+
+  const dataStructure = () => {
+    let tempArr = [];
+    if (localData.photos) {
+      for (let i of localData?.photos) {
+        const data = { src: i, width: random(5, 7), height: random(4, 7) };
+        tempArr.push(data);
+      }
+      return tempArr;
+    }
+  };
+
   useEffect(() => {
     // Update local storage when jsonData change
     const getDataLocalStorage = localStorage.getItem("myAppData");
@@ -68,15 +41,15 @@ const Details = () => {
   }, []);
 
   useEffect(() => {
-    console.log("...localData...>", localData);
+    setImgSrc(localData);
+    console.log("...zzzzlocalData...>", localData.photos);
   }, [localData]);
 
   return (
     <>
-      {localData &&
-        localData.length &&
-        localData.map((data, i) => {
-          console.log("...localData...>", localData);
+      {localData.description &&
+        localData.description.length &&
+        localData.description.map((data, i) => {
           return (
             <ul>
               <li key={i} className="detail-data">
@@ -85,7 +58,7 @@ const Details = () => {
             </ul>
           );
         })}
-      <Gallery className="gallery" photos={photos} />;
+      <Gallery className="gallery" photos={dataStructure()} />
     </>
   );
 };

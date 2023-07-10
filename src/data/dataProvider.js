@@ -1,6 +1,6 @@
-import myData from "../assets/logindata.json";
-import career from "../assets/careerdata.js";
-import hobbies from "../assets/hobbies";
+import myData from "../assets/data/logindata.json";
+import career from "../assets/data/careerdata.js";
+import hobbies from "../assets/data/hobbies";
 
 export function getUserData() {
   return myData;

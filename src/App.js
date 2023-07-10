@@ -13,6 +13,10 @@ import Hobbies from "./ui/Hobbies/hobbies";
 import { useState } from "react";
 import Detail from "./ui/Hobbies/details";
 import { DataProvider } from "./data/DataContext";
+import Portfolio from "./ui/portfolio/portfolio";
+import PortfolioDetails from "./ui/portfolio/portfoliodetails";
+import Achivements from "./ui/achievements/achivements";
+import Technichalblog from "./ui/technichalblog/technichalblog";
 
 function App() {
   let globalDataInfo = createContext();
@@ -24,8 +28,12 @@ function App() {
           <Route path="/" element={<Myhomeprofile />} />
           <Route path="/career" element={<Career />} />
           <Route path="/myproject" element={<MyProject />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/hobbyDetails" element={<Detail />} />
+          <Route path="/achivements" element={<Achivements />} />
+          <Route path="/technichalblog" element={<Technichalblog />} />
+          <Route path="/portfolioDetail" element={<PortfolioDetails />} />
         </Routes>
       </DataProvider>
     </>

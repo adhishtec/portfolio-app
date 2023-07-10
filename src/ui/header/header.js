@@ -12,10 +12,19 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import DownloadIcon from "@mui/icons-material/Download";
 import { Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./header.scss";
-const pages = ["Info", "career", "Blog"];
+import resume from "../../assets/AdhishResume.pdf";
+const pages = [
+  "Info",
+  "career",
+  "Portfolio",
+  "Achivements",
+  "Travel Blog",
+  "Technichal Blog",
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -35,8 +44,14 @@ function ResponsiveAppBar() {
       navigate("career");
     } else if (event.target.innerText === "MY PROJECTS") {
       navigate("myproject");
-    } else if (event.target.innerText === "BLOG") {
+    } else if (event.target.innerText === "PORTFOLIO") {
+      navigate("portfolio");
+    } else if (event.target.innerText === "TRAVEL BLOG") {
       navigate("hobbies");
+    } else if (event.target.innerText === "ACHIVEMENTS") {
+      navigate("achivements");
+    } else if (event.target.innerText === "TECHNICHAL BLOG") {
+      navigate("technichalblog");
     } else if (event.target.innerText === "INFO") {
       navigate("/");
     }
@@ -70,7 +85,6 @@ function ResponsiveAppBar() {
           >
             ADHISHNIGAM
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -137,6 +151,11 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+
+          <a href={resume} download="AdhishNigam.pdf" className="download-btn">
+            <DownloadIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            Resume
+          </a>
         </Toolbar>
       </Container>
     </AppBar>
