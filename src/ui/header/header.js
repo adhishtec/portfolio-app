@@ -19,7 +19,7 @@ import "./header.scss";
 import resume from "../../assets/AdhishResume.pdf";
 const pages = [
   "Info",
-  "career",
+  "Career",
   "Portfolio",
   "Achivements",
   "Travel Blog",
@@ -40,19 +40,41 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = (event) => {
     console.log(event.target.innerText);
-    if (event.target.innerText === "CAREER") {
+    if (
+      event.target.innerText === "Career" ||
+      event.target.innerText === "CAREER"
+    ) {
+      console.log("42342342342232432423");
       navigate("career");
-    } else if (event.target.innerText === "MY PROJECTS") {
+    } else if (
+      event.target.innerText === "MY PROJECTS" ||
+      event.target.innerText === "my project"
+    ) {
       navigate("myproject");
-    } else if (event.target.innerText === "PORTFOLIO") {
+    } else if (
+      event.target.innerText === "Portfolio" ||
+      event.target.innerText === "PORTFOLIO"
+    ) {
       navigate("portfolio");
-    } else if (event.target.innerText === "TRAVEL BLOG") {
+    } else if (
+      event.target.innerText === "TRAVEL BLOG" ||
+      event.target.innerText === "Trevel Blog"
+    ) {
       navigate("hobbies");
-    } else if (event.target.innerText === "ACHIVEMENTS") {
+    } else if (
+      event.target.innerText === "ACHIVEMENTS" ||
+      event.target.innerText === "Achivements"
+    ) {
       navigate("achivements");
-    } else if (event.target.innerText === "TECHNICHAL BLOG") {
+    } else if (
+      event.target.innerText === "TECHNICHAL BLOG" ||
+      event.target.innerText === "Technichal Blog"
+    ) {
       navigate("technichalblog");
-    } else if (event.target.innerText === "INFO") {
+    } else if (
+      event.target.innerText === "INFO" ||
+      event.target.innerText === "Info"
+    ) {
       navigate("/");
     }
 

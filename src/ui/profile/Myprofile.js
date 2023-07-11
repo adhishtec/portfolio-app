@@ -104,7 +104,7 @@ export default function BackToTop(props) {
       <div className="start-container">
         <img src={img} className="profileimg" />
         <Box className="video-box">
-          <video width="auto" height="270" autoPlay muted>
+          <video width="100%" height="270" autoPlay muted>
             <source src={vdo} type="video/ogg" />
           </video>
         </Box>
