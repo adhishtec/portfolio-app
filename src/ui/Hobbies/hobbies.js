@@ -32,42 +32,29 @@ const card = (
       <Typography variant="h5" component="div" color="white">
         The Story Of Globetrotter
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="white">
-        Obsessed with exploring the world, meeting new people. I’m not going to
-        lie: I think I have a pretty good travel blog. (You probably do too if
-        you’re here.) I work hard to provide excellent practical travel advice
-        to help you travel better, but I’m not the only great travel blogger out
-        there. In fact — and I know this might be shocking — there’s a lot about
-        travel that I’m not an expert on. Family travel? No idea. Travel as a
-        woman? Clueless. Information on hotels? Only a little. Photography? I
-        can manage to turn my camera on if that counts. Food expert? Only at
-        eating it.
+      <Typography sx={{ mb: 1.5, marginTop: 2 }} color="white">
+        Meet Adhish, an adventurous soul and passionate travel blogger who
+        traverses the globe in search of awe-inspiring experiences. With a
+        curious mind and an insatiable wanderlust, I made it his mission to
+        uncover hidden gems and share captivating tales with his devoted
+        audience.
         <p>
-          Hi I am Adhish and welcome to my Travel blog 'The story of
-          globetrotter'{" "}
+          From the vibrant streets of bustling cities to the tranquil beauty of
+          remote landscapes, my journey takes me to the farthest corners of the
+          world. Armed with his camera and a keen eye for detail, my captures
+          the essence of each destination, immortalizing the spirit and charm in
+          his photographs and blog posts.
         </p>
         <p>
-          Besides being one of my all-time favorite people in the world, Jodi is
-          also a damn amazing blogger who writes often about food and culture.
-          She devotes a lot of time to food on the road, taking mouthwatering
-          photos that make me jealous of her ability to do so. A former lawyer,
-          she also writes a series called “Thrillable Hours” about other lawyers
-          who gave up being a corporate lackey for life on the road.
-        </p>
-        <p>
-          If there was a contest for the best travel blog, I would tell everyone
-          to vote for me. Then I would go vote for Audrey and Dan. They tell
-          heartwarming stories and take incredible, out-of-this-world
-          photographs. Their blog focuses on cultural travel and sustainability
-          issues (they even work with the UN Global Sustainable Tourism
-          Council). I focus on the nuts and bolts of going places, whereas they
-          focus on the people. They are simply great storytellers.
+          Beyond the allure of exotic locations, my blog is a testament to my
+          belief in sustainable travel and responsible tourism. My strives to
+          create awareness about the importance of preserving our planet and its
+          diverse cultures. Through his blog, I am educating to my readers on
+          eco-friendly practices and encourages them to travel with mindfulness
+          and respect for the environment.
         </p>
       </Typography>
     </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
   </React.Fragment>
 );
 
@@ -94,7 +81,6 @@ export default function Hobbies() {
     <>
       <div className="main-hobby-component">
         {card}
-        <h4>My destinations</h4>
         <ImageList
           className="countries-list"
           sx={{

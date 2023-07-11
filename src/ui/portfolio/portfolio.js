@@ -1,7 +1,5 @@
 import "./portfolio.scss";
-import Box from "@mui/material/Box";
-import { autocompleteClasses } from "@mui/material";
-import webappVdo from "../../assets/M.mp4";
+
 import HoverVideoPlayer from "react-hover-video-player";
 import webimg from "../../assets/1.png";
 import mobileimg from "../../assets/2.png";
