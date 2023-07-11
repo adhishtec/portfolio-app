@@ -80,7 +80,6 @@ export default function Hobbies() {
   // const history = useNavigate();
   React.useEffect(() => {
     const data = getHobbies();
-    console.log(data);
     setPlacesData(data.countries);
   }, [getHobbies()]);
 

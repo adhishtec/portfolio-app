@@ -15,10 +15,8 @@ import mobile3 from "../../assets/mobile3.png";
 import mobile4 from "../../assets/mobile4.png";
 
 const PortfolioDetails = () => {
-  console.log("......>>>>>>>>......>>>>>");
   const { state } = useLocation();
   const { optionObj } = state;
-  console.log("SONAMAAAAAA,,,,", optionObj);
   return (
     <>
       <div className="portfolio-class">

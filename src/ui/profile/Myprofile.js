@@ -67,8 +67,6 @@ export default function BackToTop(props) {
   React.useEffect(() => {
     setDescription(getUserData().description);
     setObject(getUserData());
-
-    console.log(getObject);
   }, []);
 
   const [progress, setProgress] = React.useState(0);

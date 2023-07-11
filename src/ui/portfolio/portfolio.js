@@ -32,7 +32,7 @@ const Portfolio = () => {
       id: "web",
       name: "Web Applications",
       coverImg: webimg,
-      img: [webimg, celcom, generali, adhishnigam],
+      img: [celcom, generali, adhishnigam],
       link: [
         "https://www.celcom.com.my/personal",
         "https://portal.generali.ch/en/login#/login",
@@ -44,7 +44,7 @@ const Portfolio = () => {
       id: "mobile",
       name: "Mobile Applications",
       coverImg: mobileimg,
-      img: [mobileimg, mobile1, mobile2, mobile3, mobile4],
+      img: [mobile1, mobile2, mobile3, mobile4],
       link: [
         "https://play.google.com/store/apps/details?id=com.grppl.android.shell.CMBlloydsTSB73&hl=en_GB",
         "https://play.google.com/store/apps/details?id=com.ge.projectc&hl=en_US",

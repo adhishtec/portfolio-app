@@ -39,12 +39,10 @@ function ResponsiveAppBar() {
   };
 
   const handleCloseNavMenu = (event) => {
-    console.log(event.target.innerText);
     if (
       event.target.innerText === "Career" ||
       event.target.innerText === "CAREER"
     ) {
-      console.log("42342342342232432423");
       navigate("career");
     } else if (
       event.target.innerText === "MY PROJECTS" ||
@@ -58,7 +56,7 @@ function ResponsiveAppBar() {
       navigate("portfolio");
     } else if (
       event.target.innerText === "TRAVEL BLOG" ||
-      event.target.innerText === "Trevel Blog"
+      event.target.innerText === "Travel Blog"
     ) {
       navigate("hobbies");
     } else if (

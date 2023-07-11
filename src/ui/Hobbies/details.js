@@ -36,13 +36,11 @@ const Details = () => {
   useEffect(() => {
     // Update local storage when jsonData change
     const getDataLocalStorage = localStorage.getItem("myAppData");
-    console.log("...Sonam...>", typeof getDataLocalStorage);
     setLocalData(JSON.parse(getDataLocalStorage));
   }, []);
 
   useEffect(() => {
     setImgSrc(localData);
-    console.log("...zzzzlocalData...>", localData.photos);
   }, [localData]);
 
   return (

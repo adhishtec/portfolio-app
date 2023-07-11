@@ -16,7 +16,8 @@ const careerdata = {
       startYear: "2011",
       endYear: "2014",
       name: "MCA",
-      fullName: "Masters Of Computer Application",
+      fullName:
+        "Masters Of Computer Application(CMS developer part-time Joomla and Wordpress)",
       college: "MDU",
       type: "full time",
       description: [
