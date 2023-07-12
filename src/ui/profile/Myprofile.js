@@ -13,9 +13,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Fade from "@mui/material/Fade";
 import img from "../../assets/adhish.png";
 import { getUserData } from "../../data/dataProvider";
-import LinearProgress from "@mui/material/LinearProgress";
-import resume from "../../assets/adhish_nigam.pdf";
-import FormGroup from "@mui/material/FormGroup";
+
 import vdo from "../../assets/images/myvideo.mp4";
 
 function ScrollTop(props) {
