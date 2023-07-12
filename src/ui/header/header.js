@@ -17,6 +17,8 @@ import { Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./header.scss";
 import resume from "../../assets/AdhishResume.pdf";
+import linkedin from "../../assets/linkedin.png";
+
 const pages = [
   "Info",
   "Career",
@@ -164,7 +166,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            ADHISHNIGAM
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -178,6 +180,19 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/adhish-nigam-8775a3146/"
+          >
+            <img
+              src={linkedin}
+              className="heade-linkedin-image"
+              width={20}
+              height={20}
+              onClick={() => "location.href='https://google.com';"}
+            ></img>
+          </a>
           <a href={resume} download="AdhishNigam.pdf" className="download-btn">
             <DownloadIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
             Resume

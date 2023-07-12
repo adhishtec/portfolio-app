@@ -21,10 +21,10 @@ const About = () => {
           </p>
           <p>
             As a frontend developer, I specialize in HTML, CSS, and JavaScript,
-            the building blocks of the modern web. I believe that great design
-            goes hand in hand with exceptional functionality, and I am committed
-            to delivering user-friendly websites that not only look stunning but
-            also provide a seamless browsing experience.
+            the building blocks of the modern web and mobile. I believe that
+            great design goes hand in hand with exceptional functionality, and I
+            am committed to delivering user-friendly websites that not only look
+            stunning but also provide a seamless browsing experience.
           </p>
           <p>
             This web site is also developed in react js, javascript using Mui

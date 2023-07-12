@@ -82,6 +82,7 @@ const Portfolio = () => {
             return (
               <>
                 <HoverVideoPlayer
+                  key={i}
                   className="video"
                   videoSrc={data.video}
                   onClick={() => detailPage(data)}
