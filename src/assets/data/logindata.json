@@ -106,5 +106,22 @@
         ]
       ]
     }
+  ],
+  "offices": [
+    {
+      "country": "india",
+      "id": "ind",
+      "city": ["Delhi", "Mumbai", "Noida"]
+    },
+    {
+      "country": "USA",
+      "id": "us",
+      "city": ["California", "New york", "Texas"]
+    },
+    {
+      "country": "Germany",
+      "id": "de",
+      "city": ["Berlin", "Frankfurt", "Ludwigshafen"]
+    }
   ]
 }
