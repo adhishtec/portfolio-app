@@ -17,7 +17,7 @@ const careerdata = {
       endYear: "2014",
       name: "MCA",
       fullName:
-        "Masters Of Computer Application(CMS developer part-time Joomla and Wordpress)",
+        "Masters Of Computer Application(Part time job as Mobile Application development for Blackberry, nokia Symbian and Android at Electron Bridge, India)",
       college: "MDU",
       type: "full time",
       description: [
@@ -115,7 +115,7 @@ const careerdata = {
       type: "full time",
       description: "...",
       responsiblities:
-        "Web application(React js, React Native, Javascript, Typescript,AWS, GIT, Agile, Linear) Senior Frontend Developer",
+        "Web application(React js, Javascript, Typescript,AWS, GIT, Agile, Linear) Senior Frontend Developer",
       technelogy: "...",
       imgSrc: dropp,
     },
