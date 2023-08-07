@@ -6,6 +6,7 @@ import generali from "../../assets/images/generali.png";
 import lloyds from "../../assets/images/lloyds.png";
 import logoEB from "../../assets/images/logoEB.png";
 import tcsimg from "../../assets/images/tcsimg.png";
+import cast from "../../assets/4castimg.png";
 
 const careerdata = {
   id: "05120512",
@@ -87,7 +88,7 @@ const careerdata = {
       type: "full time",
       description: "...",
       responsiblities:
-        "Mobile and Web application(Cordova,React js, React Native, Javascript, Typescript, Git, Agile, Jira)  Frontend Developer",
+        "Mobile and Web application(Cordova,React js,Cordova , React Native, Javascript, Typescript, Git, Agile, Jira)  Frontend Developer",
       technelogy: "...",
       imgSrc: celcom,
     },
@@ -101,7 +102,7 @@ const careerdata = {
       type: "full time",
       description: "...",
       responsiblities:
-        "Web application(Magnolia CMS, React js,React Native, Javascript, Typescript,AWS, GIT, Agile, Jira) Senior Frontend Developer",
+        "Web application(Magnolia CMS, Cordova, React js,React Native, Javascript, Typescript,HTML,SCSS,Node Js,AWS, GIT, Agile, Jira) Senior Frontend Developer",
       technelogy: "...",
       imgSrc: generali,
     },
@@ -115,9 +116,23 @@ const careerdata = {
       type: "full time",
       description: "...",
       responsiblities:
-        "Web application(React js, Javascript, Typescript,AWS, GIT, Agile, Linear) Senior Frontend Developer",
+        "Web application(React js,Library creation, worked on custom SDK, Storybook(Lib), Javascript, Typescript,html,SCSS,AWS, GIT, Agile, Linear) Senior Frontend Developer",
       technelogy: "...",
       imgSrc: dropp,
+    },
+    {
+      title: "4-Cast",
+      startYear: "Jan,2023",
+      endYear: "June,2023",
+      name: "4Cast",
+      fullName: "Delivery Service",
+      college: "MDU",
+      type: "full time",
+      description: "...",
+      responsiblities:
+        "Web application(React js,Next Js,Typescript,html,SCSS,AWS, GitLab, Agile,AWS) Senior Frontend Developer(CONTRACT POSITION)",
+      technelogy: "...",
+      imgSrc: cast,
     },
   ],
 };
