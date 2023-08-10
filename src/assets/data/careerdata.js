@@ -88,7 +88,7 @@ const careerdata = {
       type: "full time",
       description: "...",
       responsiblities:
-        "Mobile and Web application(Cordova,React js,Cordova , React Native, Javascript, Typescript, Git, Agile, Jira)  Frontend Developer",
+        "Mobile and Web application(Cordova,Ionic,React js, Typescript, Git, Agile, Jira)  Frontend Developer",
       technelogy: "...",
       imgSrc: celcom,
     },
@@ -102,7 +102,7 @@ const careerdata = {
       type: "full time",
       description: "...",
       responsiblities:
-        "Web application(Magnolia CMS, Cordova, React js,React Native, Javascript, Typescript,HTML,SCSS,Node Js,AWS, GIT, Agile, Jira) Senior Frontend Developer",
+        "Web application(Magnolia CMS, Ionic, Cordova, Typescript,HTML, React js,SCSS,Node Js,AWS, GIT, Agile, Jira) Senior Frontend Developer",
       technelogy: "...",
       imgSrc: generali,
     },
