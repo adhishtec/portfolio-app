@@ -26,6 +26,7 @@ const pages = [
   "Achivements",
   "Travel Blog",
   "Technichal Blog",
+  "Game",
   "About",
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -72,6 +73,11 @@ function ResponsiveAppBar() {
       event.target.innerText === "Technichal Blog"
     ) {
       navigate("technichalblog");
+    } else if (
+      event.target.innerText === "GAME" ||
+      event.target.innerText === "game"
+    ) {
+      navigate("game");
     } else if (
       event.target.innerText === "ABOUT" ||
       event.target.innerText === "About"

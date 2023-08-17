@@ -1,0 +1,39 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 4px;
+    width: 332px;
+    height: 332px;
+    background-color: #f0f0f0;
+    padding: 4px;
+  }
+  
+  .tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .wrong-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #a71515;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .empty {
+    background-color: #ecef05;
+    cursor: default;
+  }
+  
+  

@@ -1,0 +1,198 @@
+#chat1 .form-outline ~ .form-notch div {
+    pointer-events: none;
+    border: 1px solid;
+    border-color: rgba(238, 238, 238, 0);
+    box-sizing: border-box;
+    background: transparent;
+  }
+  
+  #chat1 .form-outline ~ .form-notch .form-notch-leading {
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: none;
+    border-radius: 0.65rem 0 0 0.65rem;
+  }
+  
+  #chat1 .form-outline ~ .form-notch .form-notch-middle {
+    flex: 0 0 auto;
+    max-width: calc(100% - 1rem);
+    height: 100%;
+    border-right: none;
+    border-left: none;
+  }
+  
+  #chat1 .form-outline ~ .form-notch .form-notch-trailing {
+    flex-grow: 1;
+    height: 100%;
+    border-left: none;
+    border-radius: 0 0.65rem 0.65rem 0;
+  }
+  
+  #chat1 .form-outline:focus ~ .form-notch .form-notch-leading {
+    border-top: 0.125rem solid #39c0ed;
+    border-bottom: 0.125rem solid #39c0ed;
+    border-left: 0.125rem solid #39c0ed;
+  }
+  
+  #chat1 .form-outline:focus ~ .form-notch .form-notch-leading,
+  #chat1 .form-outline.active ~ .form-notch .form-notch-leading {
+    border-right: none;
+    transition: all 0.2s linear;
+  }
+  
+  #chat1 .form-outline:focus ~ .form-notch .form-notch-middle {
+    border-bottom: 0.125rem solid;
+    border-color: #39c0ed;
+  }
+  
+  #chat1 .form-outline:focus ~ .form-notch .form-notch-middle,
+  #chat1 .form-outline.active ~ .form-notch .form-notch-middle {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: all 0.2s linear;
+  }
+  
+  #chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+    border-top: 0.125rem solid #39c0ed;
+    border-bottom: 0.125rem solid #39c0ed;
+    border-right: 0.125rem solid #39c0ed;
+  }
+  
+  #chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing,
+  #chat1 .form-outline .form-control.active ~ .form-notch .form-notch-trailing {
+    border-left: none;
+    transition: all 0.2s linear;
+  }
+  
+  #chat1 .form-outline .form-control:focus ~ .form-label {
+    color: #39c0ed;
+  }
+  
+  #chat1 .form-outline .form-control ~ .form-label {
+    color: #bfbfbf;
+  }
+
+  .chat-window-main{
+    z-index: 1;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    background-color: #061c23;
+  }
+
+  .chat-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #464747;
+    color: #ef7a14;
+  }
+.chat-gpt-dialog{
+  background-color: #061c239a;
+  padding: 2px;
+  width: 100%;
+
+}
+  .chat-gpt-dialog-title{
+    color: #ef7a14;
+    background-color: #061c23;
+    width: 80%;
+  }
+
+  .chat-gpt-text-field{
+    color: rgb(218, 130, 130);
+    -webkit-appearance: none;
+  }
+
+  .chat-area{
+    // background-color: #09afe10e;
+  
+    background-color: #3f3e3e7b;
+    color: #f47c04;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: auto;
+  }
+  .chat-container{
+    background-color: #061D23; 
+    height: 40vh;
+    overflow: auto;
+  }
+
+  .typing-indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typing-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 2px;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .typing-indicator.active {
+    opacity: 1;
+  }
+  
+  .typing-indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typing-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 2px;
+    opacity: 0.4;
+    animation: typing-indicator-animation 1s infinite;
+  }
+  
+  @keyframes typing-indicator-animation {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+
+  .avatar{
+    font-size:50px;
+    color: #39c0ed;
+  }
+  .avatar-answer{
+    font-size:50px;
+    color: #cac5ad;
+  }
+
+  .chat-questions{
+    display: flex;
+    align-items: center;
+  }
+
+  .chat-gpt-button{
+    color: #ef7a14;
+  }
+
+  .chat-gpt-dialog-title{
+    width: 100%;
+  }
+  .chat-icon{
+    color: #39c0ed;
+  }
+  .AiOutlineWechat{
+color: #39c0ed;
+  }

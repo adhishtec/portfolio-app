@@ -12,6 +12,7 @@ import devopscertificate from "../../assets/cerificateDEvops.png";
 import achivement from "../../assets/achivement.png";
 import { Button } from "@mui/base";
 import mobilevdo from "../../assets/mobilevdo.mp4";
+import reactcertificate from "../../assets/react_linkedin.png";
 
 const Achivements = () => {
   const { state } = useLocation();
@@ -25,11 +26,12 @@ const Achivements = () => {
           <div className="profile-one">
             <Box
               sx={{
-                width: 300,
-                height: 300,
+                width: 280,
+                height: 320,
                 margin: 10,
                 backgroundImage: `url(${devopscertificate})`,
                 backgroundSize: 280,
+                backgroundRepeat: "no-repeat",
                 backgroundColor: "primary.dark",
                 "&:hover": {
                   backgroundColor: "primary.main",
@@ -42,11 +44,12 @@ const Achivements = () => {
           <div className="profile-one">
             <Box
               sx={{
-                width: 300,
-                height: 300,
+                width: 270,
+                height: 380,
                 margin: 10,
                 backgroundColor: "primary.dark",
                 backgroundImage: `url(${achivement})`,
+                backgroundRepeat: "no-repeat",
                 backgroundSize: 270,
                 "&:hover": {
                   backgroundColor: "primary.main",
@@ -55,6 +58,24 @@ const Achivements = () => {
               }}
             />
             On the spot award
+          </div>
+          <div className="profile-one">
+            <Box
+              sx={{
+                width: 260,
+                height: 200,
+                margin: 10,
+                backgroundColor: "primary.dark",
+                backgroundImage: `url(${reactcertificate})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: 270,
+                "&:hover": {
+                  backgroundColor: "primary.main",
+                  opacity: [0.9, 0.8, 0.7],
+                },
+              }}
+            />
+            React hook certification program
           </div>
         </div>
       </div>

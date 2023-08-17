@@ -1,6 +1,9 @@
 import Typography from "@mui/material/Typography";
 import myphoto from "../../assets/myphoto.png";
+import EmailModule from "../../../src/ui/email/email";
+import { ThemeProvider } from "@mui/material/styles";
 import "./about.scss";
+import theme from "../../ui/email/theme";
 const About = () => {
   return (
     <>
@@ -42,6 +45,9 @@ const About = () => {
           <p>Phone: +49 15510132051</p>
           <p>Email: adhishnigam@gmail.com</p>
         </div>
+        <ThemeProvider theme={theme}>
+          <EmailModule />
+        </ThemeProvider>
       </div>
     </>
   );
